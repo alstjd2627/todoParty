@@ -1,9 +1,13 @@
-package com.sparta.todoparty;
+package com.sparta.todoparty.user;
 
 import jakarta.validation.constraints.Pattern;
 import lombok.Getter;
+import lombok.Setter;
+import org.hibernate.annotations.DynamicInsert;
+import org.springframework.stereotype.Service;
 
 @Getter
+@Setter
 public class UserRequestDto {
 
     @Pattern(regexp = "^[a-z0-9]{4,10}$")
